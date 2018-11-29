@@ -7,8 +7,7 @@ const store = createStore(rootReducer, {
   currentVideo: null,
   videoList: []
   },
-  applyMiddleware(thunk),
-  +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  applyMiddleware(thunk)
 );
 
 export default store;
